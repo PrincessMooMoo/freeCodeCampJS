@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/longWordString.js"
+            "program": "${workspaceFolder}/titleCaseASentence.js"
         }
     ]
 }
