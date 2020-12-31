@@ -1,20 +1,14 @@
 function titleCase(str) {
-  let lowerCase = str.toLowerCase();
-  // console.log(lowerCase)
-  let wordArr = lowerCase.split(" ");
-  for (let i = 0; i < wordArr.length; i++){
-    for (let j = 0; j < wordArr.length; j++){
-      j = j.toUpperCase;//work on this line later
-    }
+  // let word = str.substring(0, 2) + str[2].toUpperCase() + str.substring(3);
+  // console.log(word)
+  let lowercase = str.toLowerCase();
+  let words = lowercase.split(' ');
+  for (let i = 0; i < words.length; i++){
+    words[i] = words[i][0].toUpperCase() + words[i].substring(1);
   }
-  // wordArr.forEach(word => 
-  //   word.forEach(letter => letter[0].toUpperCase));
-  // wordArr.replace()
-  // console.log(wordArr)
-  // let firstLetterArr = wordArr.map(i => i);
-  // console.log(firstLetterArr);
-  
-  return str;
+  let sentence = words.join(' ');
+  console.log(sentence);
+  return sentence;
 }
 
-titleCase("I'm a little tea pot");
+titleCase("sHoRt AnD sToUt");
